@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  display: flex;
+  height: 100vh;
+  color: rgb(8, 35, 77);
+  font-size: xx-large;
+  text-shadow:-0.5px -0.5px 0 rgb(255, 255, 255), 0.5px 0.5px rgb(255, 255, 255), -0.5px -0.5px 0 rgb(255, 255, 255), 0.5px 0.5px rgb(255, 255, 255)
+}
+
+body::before{
+  content: "";
+  position: absolute;
+  top: 0; left: 0;right: 0; bottom: 0;
+  background:url(ml\ new.jpeg)
+no-repeat center center fixed; 
+background-size: cover;
+filter: blur(6px); /* adjust blur */
+z-index: -1; /* keep it beind text */
+}
+.sidebar {
+  width: 220px;
+  background: #222;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 8px;
+  display: block;
+  transition: 0.3s;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.sidebar a {
+  display: block;
+  padding: 12px;
+  margin: 8px 0;
+  background: #444;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;         /* rounded corners */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3); /* floating effect */
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  background: #5997c0;
+  transform: translateY(-2px); /* lift on hover */
+}
+
+.content{
+  flex: 1;
+  padding: 30px;
+  overflow-y: auto;
+  text-align: center;
+}
